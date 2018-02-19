@@ -1,6 +1,9 @@
 module Main where
 
-import Lib
+import Music
+import Music.Util
 
-main :: IO ()
-main = someFunc
+main :: IO Bool
+main = do
+    Music.Util.runTests
+    Music.runTests
